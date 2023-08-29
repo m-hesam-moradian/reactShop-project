@@ -1,0 +1,40 @@
+.navbar {
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.29);
+  background-color: var(--firstLight-color);
+  box-shadow: 0 10px 10px var(--firstLight-color);
+  /* color: white; */
+}
+.nav-item .nav-link{
+  color: var(--second-color);
+}
+.bag-container{
+  position: relative;
+  color: var(--seventh-color);
+  /* background-color: aliceblue; */
+  }
+.bag-container .bag:hover{
+  /* position: relative; */
+  color: var(--second-color);
+  font-size: 20px;
+}
+.bag-container .bag{
+  transition: all 0.4s;
+  /* position: relative; */
+  color: var(--seventh-color);
+  font-size: 20px;
+}
+.bag-container span{
+  background-color:  var(--seventh-color);
+    color:var(--second-color);
+  /* font-weight: 600; */
+position: absolute;
+top: 0;
+right: 5px;
+width: 20px;
+height: 20px;
+border-radius: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
