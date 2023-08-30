@@ -1,0 +1,55 @@
+.toast {
+  z-index: 999 !important;
+  /* background-color: aqua !important; */
+  position: fixed;
+  top: 5rem;
+  opacity: 80%;
+}
+.BagsideBar-container {
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.92);
+  color: var(--text-color);
+  padding: 2rem;
+  position: fixed;
+  right: -450px;
+  bottom: 0;
+  top: 0;
+
+  z-index: 9999;
+  transition: all 0.5s;
+scale: 0;
+}
+.BagsideBar .active {
+  scale: 1;
+  right: 0px !important;
+}
+.BagsideBar-container .bag-icon {
+  font-size: 1.7rem;
+}
+.BagsideBar img {
+  width: 30%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: 1rem;
+}
+.BagsideBar {
+  border-radius: 10px;
+  height: 5rem;
+  background-color: var(--secondLight-color);
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.BagsideBar h4 {
+  color: black;
+}
+.bag-text {
+  margin-top: 1rem;
+}
+.BagsideBar p {
+  color: rgb(84, 84, 84);
+  font-size: medium;
+}
+.BagsideBar-container button {
+  border-radius: 10px;
+}

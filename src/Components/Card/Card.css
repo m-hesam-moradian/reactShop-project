@@ -1,12 +1,15 @@
-.card-container {
-  border-radius: 20px;
+.card {
+  border-radius: 20px !important;
 
   background-color: var(--second-color);
 
-  transition: all 0.4;
+     transition: all 0.4s !important;
+  min-width: 15rem !important;
 }
+
 .card-container:hover {
   box-shadow: 0 0 9px 0;
+   transform: scale(1.1);
 }
 .card-container img {
   border-radius: 10px;
