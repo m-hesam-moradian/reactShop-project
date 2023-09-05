@@ -1,7 +1,7 @@
 .navbar {
   border-bottom: 0.1px solid rgba(255, 255, 255, 0.29);
-  background-color: var(--firstLight-color);
-  box-shadow: 0 10px 10px var(--firstLight-color);
+  /* background-color: var(--); */
+  box-shadow: 0 0px 10px rgba(0, 0, 255, 0.573);
   /* color: white; */
 }
 .nav-item .nav-link{

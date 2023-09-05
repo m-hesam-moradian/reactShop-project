@@ -17,8 +17,9 @@
 
   z-index: 9999;
   transition: all 0.5s;
-scale: 0;
+  scale: 0;
 }
+
 .BagsideBar .active {
   scale: 1;
   right: 0px !important;
@@ -27,7 +28,7 @@ scale: 0;
   font-size: 1.7rem;
 }
 .BagsideBar img {
-  width: 30%;
+  width: 20%;
   height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -52,4 +53,13 @@ scale: 0;
 }
 .BagsideBar-container button {
   border-radius: 10px;
+}
+.background-bag {
+    background-color: #0000008f;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }

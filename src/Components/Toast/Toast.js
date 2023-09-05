@@ -1,9 +1,14 @@
-import React from "react";
+import React,{ useContext } from "react";
+import ProductsContext from "./../../contexts/productsContext";
 
 export default function Toast() {
+  const isShowToast = useContext(ProductsContext).isShowToast;
+  const setisShowToast = useContext(ProductsContext).setisShowToast;
   return (
     <div
-      className="toast   align-items-center text-white bg-success - border-0"
+      className={`toast   align-items-center text-white bg-success - border-0 ${
+        isShowToast ? "show" : ""
+      } `}
       role="alert"
       aria-live="assertive"
       aria-atomic="true"
@@ -15,6 +20,12 @@ export default function Toast() {
           className="btn-close btn-close-white me-2 m-auto"
           data-bs-dismiss="toast"
           aria-label="Close"
+          onClick={
+            () => {
+              setisShowToast(false)
+              
+            }
+          }
         ></button>
       </div>
     </div>

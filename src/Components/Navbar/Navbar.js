@@ -1,13 +1,17 @@
-import React from "react";
+import React , { useContext }from "react";
 import { BsBag } from "react-icons/bs";
+import ProductsContext from "./../../contexts/productsContext";
 import "./Navbar.css";
 
 export default function Navbar() {
+  const setisShowBagside = useContext(ProductsContext).setisShowBagside;
+  const userCart = useContext(ProductsContext).userCart;
+// console.log(userCart);
   return (
     <div>
-      <nav className="navbar main navbar-expand-sm ">
+      <nav className="navbar main navbar-expand-sm bg-primary ">
         <div className="container d-flex justify-content-center  ">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand link-light " href="#">
             React Shop
           </a>
           <button
@@ -36,11 +40,32 @@ export default function Navbar() {
                   Link
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  contact
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  about us
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  new products
+                </a>
+              </li>
             </ul>
             <div className="bag-container">
-              <a className="nav-link bag-container" href="#">
+              <a
+                className="nav-link bag-container"
+                href="#"
+                onClick={() => {
+                  setisShowBagside(true);
+                }}
+              >
                 <BsBag className="bag" />
-                <span className="bag-conter">0</span>
+                <span className="bag-conter">{userCart.length}</span>
               </a>
             </div>
           </div>
